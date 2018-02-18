@@ -1,0 +1,49 @@
+@import '../../variables';
+
+section {
+  background: var(--white);
+  padding:  calc(var(--spacing) * 3) var(--spacing);
+  display: flex;
+  align-items: center;
+}
+
+section.vfull {
+  height: 100vh;
+}
+
+section .wrapper {
+  width: 100%;
+  max-width: var(--max-content-width);
+  margin: 0px auto;
+}
+
+section .wrapper.full {
+  max-width: 100%;
+}
+
+section .wrapper.center {
+  text-align: center;
+}
+
+section.primary { background-color: var(--primary); }
+section.primary-light { background-color: var(--primary-light);  }
+section.info { background-color: var(--info); }
+section.info-light { background-color: var(--info-light); }
+section.danger { background-color: var(--danger); }
+section.danger-light { background-color: var(--danger-light); }
+
+section.dark {
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+section.dark h2 {
+  color: var(--white-light);
+}
+
+section.dark-light { background-color: var(--dark-light); }
+section.grey { background-color: var(--grey); }
+section.grey-light { background-color: var(--grey-light); }
+section.grey-transparent { background-color: var(--grey-transparent); }
+section.white { background-color: var(--white); }
+section.white-light { background-color: var(--white-light); }

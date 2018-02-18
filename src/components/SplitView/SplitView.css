@@ -1,0 +1,67 @@
+@import '../../variables';
+
+.split-view {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.split-view menu {
+  width: 30%;
+  align-self: flex-start;
+  font-family: var(--font-sans-serif);
+  position: sticky;
+  padding-left: var(--spacing);
+  top: 0px;
+}
+
+.split-view menu span > ul {
+  margin-top: 12px;
+  margin-left: calc(var(--spacing) / 1.5);
+}
+
+.split-view menu ul {
+  padding: 0px;
+}
+
+.split-view menu ul ul li {
+  padding-left: var(--spacing) !important;
+}
+
+.split-view menu ul li {
+  cursor: pointer;
+  padding-left: calc(var(--spacing) / 2);
+  text-transform: capitalize;
+  list-style: none;
+}
+
+.split-view menu ul li:hover {
+  border-left: solid 4px var(--grey);
+  font-weight: 700 !important;
+  margin-left: -4px;
+}
+
+.split-view menu ul li.active {
+  list-style: none;
+  border-left: solid 4px var(--primary);
+  margin-left: -4px;
+  font-weight: 700;
+}
+
+.split-view menu ul li a {
+  color: inherit;
+  display: block;
+  font-weight: inherit;
+}
+
+.split-view .content {
+  display: block;
+  padding: var(--spacing) 0px;
+  width: 70%;
+}
+
+.split-view .content .markup {
+  width: 100%;
+}

@@ -1,0 +1,79 @@
+@import '../../variables';
+
+.index.grid {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: calc(var(--spacing) * -1);
+  margin-right: calc(var(--spacing) * -1);
+}
+
+.index.grid .item {
+  text-align: left;
+  font-size: 1em;
+  line-height: 1.6em;
+  width: calc(50% - var(--spacing) * 2 * 1.2);
+  margin: calc(var(--spacing) / 2) calc(var(--spacing) * 1.2);
+}
+
+h4:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  vertical-align: top;
+  display: inline-block;
+  text-align: right;
+  padding-right: 10px;
+  width: 35px;
+  margin-left: -35px;
+  color: var(--primary);
+}
+
+.communication:before {
+  content: "\f086";
+}
+
+.collaboration:before {
+  content: "\f15c";
+}
+
+.notifications:before {
+  content: "\f0f3";
+}
+
+.location:before {
+  content: "\f279";
+}
+
+.authentication:before {
+  content: "\f023";
+}
+
+.integration:before {
+  content: "\f1b3";
+}
+
+.presence:before {
+  content: "\f0c0";
+}
+
+.wildcard:before {
+  content: "\f005";
+}
+
+.single:before {
+  content: "\f233";
+}
+
+.distributed:before {
+  content: "\f0e8";
+}
+
+
+
+@media(max-width: 900px) {
+  .index.grid {
+    margin: 0px;
+  }
+  .index.grid .item {
+    width: 100%;
+  }
+}
