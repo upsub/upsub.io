@@ -10,7 +10,7 @@ export default () => (
       </div>
       <div class='item'>
         <h4 class='integration'>Integration</h4>
-        <p>Easy to integrate into existing development and production environments. UpSub supports webhooks and has a simple API for sending messages.</p>
+        <p>Easy to integrate into existing development and production environments. UpSub has webhooks and a simple API for sending and receiving messages.</p>
       </div>
       <div class='item'>
         <h4 class='presence'>Presence</h4>
