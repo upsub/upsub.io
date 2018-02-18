@@ -2,6 +2,7 @@ import Layout from 'components/Layout'
 import Markdown from 'components/Markdown'
 import SplitView from 'components/SplitView'
 import Document from 'components/Document'
+import Clients from './Clients'
 
 const menu = [{
   title: 'Getting Started',
@@ -21,25 +22,25 @@ const menu = [{
     {
       path: '/configuration',
       title: 'Configuration',
-      content: () => <h1>Testing</h1>,
+      content: () => <Document path='getting-started/configuration' />,
       items: []
     },
     {
       path: '/clients',
       title: 'Clients',
-      content: null,
+      content: () => <Clients />,
       items: []
     },
     {
-      path: '/adapters',
-      title: 'Adapters',
-      content: null,
+      path: '/channels',
+      title: 'Channels',
+      content: () => <Document path='getting-started/channels' />,
       items: []
     },
     {
-      path: '/production',
-      title: 'In production',
-      content: null,
+      path: '/presence',
+      title: 'Presence',
+      content: () => <Document path='getting-started/presence' />,
       items: []
     }
   ]

@@ -17,6 +17,7 @@ export default class Document extends Component {
   }
 
   fetchDocument () {
+    this.setState({ text: '' })
     fetch(`/api/docs/${this.props.path.toLowerCase()}.md`)
       .then(res => res.text())
       .then(text => this.setState({ text }))

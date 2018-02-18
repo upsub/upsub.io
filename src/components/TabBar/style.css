@@ -1,0 +1,44 @@
+@import '../../variables.css';
+
+.tab-bar {
+  font-family: var(--font-sans-serif);
+  border: solid 1px var(--grey-light);
+  border-radius: var(--border-radius);
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: var(--spacing) 0px;
+}
+
+.tab-bar .tab-item {
+  width: 16%;
+  cursor: pointer;
+  padding: calc(var(--spacing) / 3);
+  border-right: solid 1px var(--grey-light);
+}
+
+.tab-bar .tab-item:last-child {
+  border: none;
+}
+
+.tab-bar .tab-item.disabled {
+  color: var(--grey-light);
+  cursor: not-allowed;
+}
+
+.tab-bar .tab-item.active {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+@media(max-width: 800px) {
+  .tab-bar {
+    display: block;
+  }
+
+  .tab-bar .tab-item {
+    width: 100%;
+    border-right: 0px;
+    border-bottom: solid 1px var(--grey-light);
+  }
+}

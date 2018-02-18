@@ -1,27 +1,11 @@
 import Layout from 'components/Layout'
-import Markdown from 'components/Markdown'
-import SplitView from 'components/SplitView'
-
-const menu = [{
-  title: 'Dispatcher',
-  items: [
-    {
-      path: '/',
-      title: 'Installation',
-      content: null,
-      items: []
-    }
-  ]
-},{
-  title: 'Client',
-  items: []
-},{
-  title: 'Adapter',
-  items: []
-}]
+import Introduction from 'components/Introduction'
 
 export default () => (
   <Layout class='layout'>
-    <SplitView basePath='docs' menu={menu} />
+    <Introduction>
+      <h1>Comming soon!</h1>
+      <h2>We are currently working on the final changes before v1 of UpSub is released.</h2>
+    </Introduction>
   </Layout>
 )

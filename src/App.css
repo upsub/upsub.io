@@ -47,8 +47,7 @@ h6 {
   font-size: 1em;
 }
 
-p,
-q {
+p, blockquote {
   margin: var(--spacing) 0px;
 }
 
@@ -56,13 +55,20 @@ code {
   font-family: var(--font-monospace);
   padding: 0px 8px;
   font-size: .9em;
-  background: var(--grey-light);
+  background: var(--grey-transparent);
   display: inline-block;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
 }
 
 pre code {
   width: 100%;
+}
+
+blockquote {
+  color: var(--dark-transparent);
+  border-left: solid 3px var(--grey);
+  padding-left: var(--spacing);
+  margin-left: var(--spacing)
 }
 
 *, *:before, *:after {

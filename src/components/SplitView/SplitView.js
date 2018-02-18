@@ -23,6 +23,10 @@ export default class SplitView extends Component {
     document.title = 'UpSub'
   }
 
+  componentDidUpdate () {
+    window.scrollTo(0, 0)
+  }
+
   render ({ menu }) {
     return (
       <div class='split-view'>

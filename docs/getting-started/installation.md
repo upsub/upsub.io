@@ -1,29 +1,36 @@
 # Installation
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-### Installation
+This section will describe how to install and get the UpSub Dispatcher up and
+running.
 
 #### Requirements
+The UpSub Dispatcher are only build as a docker-image for now and requires that
+you have docker installed on the host system.
+> UpSub will be available as a binary at a latter state.
 
-asdgasdg
+#### Start the Dispatcher
+The Dispatcher image is available through docker hub and can simply be installed
+and run by the command below.
+```sh
+docker run -d -p 4400:4400 upsub/dispatcher
+```
+This starts a Dispatcher instance which is exposed on port `4400`. You can
+follow the Dispatchers log by connecting to the image via the docker cli command
+`logs`.
+```sh
+docker logs -f <image-id>
+```
 
 #### Docker Compose
-
-```sh
-docker login
-```
-
-```yaml
-version: "3"
+The best way to get the Dispatcher integrated in your development environment
+is to use [docker-compose](https://docs.docker.com/compose/overview/).
+Down below is an example of a simple `docker-compose.yml` that configures a dispatcher instance.
+```yml
+version: '3'
 services:
-  your-service:
-    build: .
-    ports:
-     - "3000:3000"
-
   upsub:
-    image: "upsub/dispatcher"
+    image: upsub/dispatcher
     ports:
-      - "4999:4999"
+      - '4400:4400'
 ```
+
+[>> Continue with Configuration](/getting-started/configuration)
