@@ -17,8 +17,9 @@ export default {
   Python,
   Java,
   Golang,
+  Ruby,
   Swift,
   Erlang,
   Laravel,
-  Github,
+  Github
 }

@@ -1,14 +1,14 @@
-import { h, render} from 'preact'
+import { h, render } from 'preact'
 import Router from 'preact-router'
 import './App.css'
-
-global.h = h
 
 import Index from 'views/Index'
 import GettingStarted from 'views/GettingStarted'
 import Docs from 'views/Docs'
 import Community from 'views/Community'
 import NotFound from 'views/NotFound'
+
+global.h = h
 
 const App = () => (
   <Router>
@@ -21,4 +21,3 @@ const App = () => (
 )
 
 render(<App />, document.querySelector('#root'))
-// registerServiceWorker();

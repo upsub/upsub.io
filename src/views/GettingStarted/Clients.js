@@ -3,7 +3,6 @@ import Document from 'components/Document'
 import TabBar, { TabItem } from 'components/TabBar'
 
 export default class Clients extends Component {
-
   languages = [
     ['JavaScript', false],
     ['php', false],
@@ -11,14 +10,14 @@ export default class Clients extends Component {
     ['Java', true],
     ['Python', true],
     ['Swift', true],
-    ['C#', true],
+    ['C#', true]
   ]
 
   state = {
-    currentLang: null,
+    currentLang: null
   }
 
-  render ({}, { currentLang }) {
+  render (props, { currentLang }) {
     return (
       <div>
         <h1>Clients</h1>
@@ -54,5 +53,4 @@ export default class Clients extends Component {
       </TabItem>
     )
   }
-
 }

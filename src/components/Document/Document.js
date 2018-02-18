@@ -1,6 +1,6 @@
+/* global fetch */
 import { Component } from 'preact'
 import Markdown from 'components/Markdown'
-
 
 export default class Document extends Component {
   state = {

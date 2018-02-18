@@ -1,5 +1,4 @@
 import { Component } from 'preact'
-import Markdown from 'components/Markdown'
 import './SplitView.css'
 
 function join (...paths) {
@@ -16,9 +15,7 @@ function join (...paths) {
   return newPath.replace(/\/$/, '')
 }
 
-
 export default class SplitView extends Component {
-
   componentDidUnmount () {
     document.title = 'UpSub'
   }
@@ -55,7 +52,7 @@ export default class SplitView extends Component {
     const path = join(this.props.basePath, item.path)
 
     if (path === window.location.pathname) {
-      document.title = item.title + ' - UpSub';
+      document.title = item.title + ' - UpSub'
     }
 
     return (

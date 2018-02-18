@@ -1,12 +1,10 @@
 import { Component } from 'preact'
 import Logo from 'components/Logo'
-import Button from 'components/Button'
 import './Introdoction.css'
 
 const random = (min, max) => Math.floor(Math.random() * max) + min
 
 export default class Introduction extends Component {
-
   planes = 20
   colors = ['primary', 'primary-light', 'info', 'info-light', 'danger', 'danger-light', 'dark-light', 'grey', 'grey-light']
 
@@ -28,9 +26,9 @@ export default class Introduction extends Component {
     )
   }
 
-  renderPlane(color, x, y, heading, animation) {
+  renderPlane (color, x, y, heading, animation) {
     const style = {
-      transform: `translate(${x}px, ${y}px) rotate(${heading}deg)`,
+      transform: `translate(${x}px, ${y}px) rotate(${heading}deg)`
     }
 
     animation = `trail animation-${animation}`
@@ -42,7 +40,7 @@ export default class Introduction extends Component {
     )
   }
 
-  renderPlanes(animation) {
+  renderPlanes (animation) {
     const planes = []
 
     for (let i = 0; i < (this.planes / 4) + 1; i++) {
@@ -57,5 +55,4 @@ export default class Introduction extends Component {
 
     return planes
   }
-
 }

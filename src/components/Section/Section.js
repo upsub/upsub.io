@@ -19,7 +19,6 @@ const sectionClasses = ({ color, vfull }) => {
   return classes.join(' ')
 }
 
-
 export default props => (
   <section style={props.style} height={props.height} class={sectionClasses(props)}>
     <div class={wrapperClasses(props)}>

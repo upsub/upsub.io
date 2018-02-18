@@ -1,5 +1,4 @@
 import Layout from 'components/Layout'
-import Markdown from 'components/Markdown'
 import SplitView from 'components/SplitView'
 import Document from 'components/Document'
 import Clients from './Clients'

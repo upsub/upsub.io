@@ -28,6 +28,5 @@ export default props => {
     return link(button(props), props)
   }
 
-
   return button(props)
 }

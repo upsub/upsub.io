@@ -1,5 +1,4 @@
 import Logo from 'components/Logo'
-import Button from 'components/Button'
 import Icons from 'components/Icons'
 import './Header.css'
 
@@ -18,7 +17,7 @@ export default () => (
       <ul>
         {renderMenuItem('/getting-started', 'Getting Started')}
         {renderMenuItem('/docs', 'Documentation')}
-        {renderMenuItem('/community', 'Community')}
+        {/* {renderMenuItem('/community', 'Community')} */}
         {renderMenuItem('https://github.com/upsub', <Icons.Github width='28' />, true)}
       </ul>
     </div>

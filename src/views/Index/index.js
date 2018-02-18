@@ -1,12 +1,8 @@
 import Layout from 'components/Layout'
 import Introduction from 'components/Introduction'
 import Button from 'components/Button'
-import Icons from 'components/Icons'
-import Section from 'components/Section'
 import UseCases from './UseCases'
 import Features from './Features'
-import Love from './Love'
-import Distributable from './Distributable'
 import './index.css'
 
 export default () => (
@@ -22,6 +18,5 @@ export default () => (
     </Introduction>
     <UseCases />
     <Features />
-    <Distributable />
   </Layout>
 )

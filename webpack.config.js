@@ -12,7 +12,7 @@ module.exports = {
     alias: {
       components: path.resolve(__dirname, './src/components'),
       views: path.resolve(__dirname, './src/views'),
-      src: path.resolve(__dirname, './src'),
+      src: path.resolve(__dirname, './src')
     }
   },
   module: {
@@ -28,7 +28,7 @@ module.exports = {
           'css-loader',
           'postcss-loader'
         ]
-      },{
+      }, {
         test: /\.(jpe|jpg|woff|woff2|eot|ttf|svg)(\?.*$|$)/,
         loader: 'file-loader'
       }

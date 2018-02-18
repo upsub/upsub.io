@@ -5,7 +5,6 @@ import 'components/Code/Code.css'
 import './Markdown.css'
 
 export default class extends Component {
-
   componentDidMount () {
     this.initCodeBlocks()
   }
