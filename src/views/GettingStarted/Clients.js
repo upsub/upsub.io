@@ -24,7 +24,7 @@ export default class Clients extends Component {
         <h1>Clients</h1>
         <p>
           UpSub actively maintains client libraries for the languages below, if
-          your language are missing a client, send us a suggestion on GitHub.
+          your language is missing a client, send us a suggestion on GitHub.
           Your are also welcome to make your own client implementation.
         </p>
         <h3>Select a language:</h3>
