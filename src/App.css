@@ -65,7 +65,7 @@ pre code {
 }
 
 blockquote {
-  font-weight: 500;
+  font-weight: 600;
   color: var(--dark-transparent);
   border-left: solid 3px var(--grey);
   padding-left: var(--spacing);
