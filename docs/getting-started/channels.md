@@ -12,7 +12,7 @@ channel/event
 UpSub supports wildcards, its a flexible way to listen on different channels at
 once. We have two wildcard operators `*` matches one part and the `>`
 matches multiple parts of the channel.
-> Wildcards are not supported in browser environments because of security concernes.
+> Wildcards are not supported in browser environments because of security concerns.
 
 ```sh
 # Example of channel which matches one part,
