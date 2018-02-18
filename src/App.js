@@ -1,7 +1,6 @@
 import { h, render} from 'preact'
 import Router from 'preact-router'
 import './App.css'
-import registerServiceWorker from './registerServiceWorker';
 
 global.h = h
 
@@ -22,4 +21,4 @@ const App = () => (
 )
 
 render(<App />, document.querySelector('#root'))
-registerServiceWorker();
+// registerServiceWorker();

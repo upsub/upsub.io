@@ -5,7 +5,7 @@ All UpSub projects are released under the MIT license.
 ```txt
 The MIT License (MIT)
 
-Copyright (c) Uptime <https://uptime.dk>
+Copyright (c) All contributors
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
