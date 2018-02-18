@@ -1,6 +1,7 @@
 /* global fetch */
 import { Component } from 'preact'
 import Markdown from 'components/Markdown'
+import './Document.css'
 
 export default class Document extends Component {
   state = {
@@ -24,6 +25,18 @@ export default class Document extends Component {
   }
 
   render ({ path }, { text }) {
+    return (
+      <div class={`document ${text === '' ? 'loading' : '' }`}>
+        {this.renderContent(text)}
+      </div>
+    )
+  }
+
+  renderContent(text) {
+    if (text === '') {
+      return <i class="fas fa-circle-notch fa-spin"></i>
+    }
+
     return <Markdown text={text} />
   }
 }
