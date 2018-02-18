@@ -1,5 +1,5 @@
 # Intro
-UpSub is a bidirectional communications platform using the publish/subscribe pattern and is based on the WebSocket protocol.
+UpSub is a bidirectional communication platform using the publish/subscribe pattern and is based on the WebSocket protocol.
 Our goal is to make real-time communication easy to implement and
 maintain. The UpSub project is open sourced and maintained by the
 community and <a href="https://uptime.dk" target="\_blank">Uptime.dk</a>.
