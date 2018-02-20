@@ -10,8 +10,8 @@
   --dark-transparent: rgba(0, 0, 0, 0.3);
   --grey: #DCE0D9;
   --grey-light: #F2F2F2;
-  --grey-transparent: rgba(0, 0, 0, .02);
-  --white: #FFFEFC;
+  --grey-transparent: rgba(0, 0, 0, .026);
+  --white: white;
   --white-light: #FFFEFD;
   --font-sans-serif: 'Fira Sans Condensed', sans-serif;
   --font-serif: 'Merriweather', serif;
