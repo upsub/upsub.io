@@ -11,7 +11,7 @@ export default () => (
       <h1>Keep it Real-time!</h1>
       <h2>
         UpSub is a Pub/Sub service built for the Web.<br />
-        Distributable, Reliable & best of all open source.
+        Fast, Reliable, Secure & best of all open source.
       </h2>
       <Button href='/getting-started' color='primary' large text='Getting Started' />
       <Button href='/docs' color='white' borderless transparent large text='Documentation' />
