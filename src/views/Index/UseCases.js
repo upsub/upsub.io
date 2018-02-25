@@ -6,7 +6,7 @@ export default () => (
     <div class='index grid'>
       <div class='item'>
         <h4 class='communication'>Communication</h4>
-        <p>Establish real-time event based communication between services or applications with ease. It could be a chat or an embedded IOT system, doesn't matter UpSub got you covered.</p>
+        <p>Establish real-time event based communication between services or applications with ease. It could be a chat or an embedded IoT system, doesn't matter UpSub got you covered.</p>
       </div>
       <div class='item'>
         <h4 class='collaboration'>Collaboration</h4>
