@@ -11,19 +11,19 @@ Configuration of Dispatcher limits and timeouts.
 **Description:** Port which the Dispatcher is exposed.
 
 **`MAX_MESSAGE_SIZE`:**<br>
-**Default:** null<br>
+**Default:** 512000<br>
 **Description:** The maximum size of a message in bytes.<br>
 
 **`CONNECTION_TIMEOUT`:**<br>
-**Default:** 10<br>
+**Default:** 30<br>
 **Description:** Dispatcher will reject connection attemp if time exceeds the timeout (value is in seconds).
 
 **`READ_TIMEOUT`:**<br>
-**Default:** 10<br>
+**Default:** 30<br>
 **Description:** Dispatcher will terminate message if it isn't received within the timeout (value is in seconds).
 
 **`WRITE_TIMEOUT`:**<br>
-**Default:** 10<br>
+**Default:** 30<br>
 **Description:** Diaptcher will terminate message if it couldn't be written within the timeout (value in seconds).
 
 #### Nats config
